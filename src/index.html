@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HIS 模擬器（診所版／大醫院版）</title>
+<!--STYLE-->
+</head>
+<body>
+<div id="login">
+  <div class="lgbox">
+    <div class="lghead"><span id="lg-title"></span>　<span id="lg-ver"></span></div>
+    <table class="kv lgform">
+      <tr><th>版本</th><td><select id="lg-ed"><option value="clinic">診所版（入門・家醫科）</option><option value="hospital">大醫院版（完整）</option></select></td></tr>
+      <tr><th>員工編號</th><td><input id="lg-emp" autocomplete="off" size="16"></td></tr>
+      <tr><th>密　　碼</th><td><input id="lg-pw" type="password" size="16"></td></tr>
+      <tr><th>工作站</th><td><select id="lg-ws"></select></td></tr>
+      <tr><th></th><td><button class="btn pri" id="lg-btn">登入</button> <span id="lg-err" class="bad"></span></td></tr>
+    </table>
+    <div class="lgnote">本系統所有病人、員工、病歷及醫療紀錄均為虛構資料，僅供教育及娛樂用途，不連接真實醫療機構、健保申報或真實病人資料。<br>
+    <b>測試帳號（密碼皆為 1234）</b>：點選下列任一列即可自動填入。</div>
+    <div id="lg-demo" class="scrollbox"></div>
+  </div>
+</div>
+<div id="app" hidden>
+  <div id="tb-info"></div>
+  <div id="menubar"></div>
+  <div id="toolbar"></div>
+  <div id="desktop"></div>
+  <div id="taskbar"></div>
+  <div id="statusbar"><span id="sbmsg">就緒</span><span id="sbnet"></span><span id="msgbadge"></span><span id="sbclock"></span></div>
+</div>
+<!--SCRIPTS-->
+</body>
+</html>
